@@ -1,0 +1,12 @@
+@import 'src/tokens';
+
+.root {
+
+}
+
+.logo {
+  font-family: $font-secondary;
+  font-weight: $bold;
+  color: $brand-primary-200;
+  margin: $space-inline-xxs;
+}

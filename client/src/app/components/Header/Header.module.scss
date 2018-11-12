@@ -1,0 +1,19 @@
+@import 'src/tokens';
+
+.root {
+  composes: container-bleed from global;
+  width: 100%;
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.06);
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  composes: container-narrow from global;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

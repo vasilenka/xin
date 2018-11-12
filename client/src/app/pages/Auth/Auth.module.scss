@@ -1,0 +1,28 @@
+@import 'src/tokens';
+
+.root {
+  background: $light-alpha-100;
+  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.greet {
+  font-family: $font-secondary;
+  color: $brand-primary-200;
+  margin: $space-stack-huge;
+}
+
+.googleLogin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  margin: $space-inline-m;
+}

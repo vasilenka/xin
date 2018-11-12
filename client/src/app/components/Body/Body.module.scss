@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  composes: container-bleed from global;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 57px);
+}
