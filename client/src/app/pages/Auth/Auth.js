@@ -9,10 +9,12 @@ import Button from './../../components/Button/Button';
 import Header from './../../components/Header/Header';
 import Body from './../../components/Body/Body';
 
+import Tick from './../../components/Tick/Tick';
+
 class Auth extends Component {
 
   constructor(props) {
-    super();
+    super(props);
     this.getData = this.getData.bind(this);
   }
 
@@ -40,6 +42,7 @@ class Auth extends Component {
             Xin.
             <span role="img" aria-label="let's start the fire">🔥</span>
           </Text>
+          <Tick />
           <a href="/auth/google">
             <Button normal className={styles.googleLogin}>
               <Google className={classnames(styles.logo)}/>

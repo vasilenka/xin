@@ -1,0 +1,14 @@
+@import 'src/tokens';
+
+.root {
+  display: inline-flex;
+  padding: $space-squish-m;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.08);
+  margin: $space-stack-l;
+  border: 1px solid rgba(0,0,0,.12);
+}
+
+.action {
+  margin: $space-inline-s;
+}

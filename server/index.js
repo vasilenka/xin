@@ -1,27 +1,16 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const keys = require('./config/keys');
 const passport = require('passport');
+const bodyParser = require('body-parser');
 // const {cors} = require('./middlewares/cors');
-
-// Connect to database
-try {
-  mongoose.connect(
-    keys.mongo.uri,
-    {
-      useCreateIndex: true,
-      useNewUrlParser: true
-    }
-  );
-} catch (err) {
-  throw err;
-}
+const { mongoose } = require('./services/mongoose');
 
 // Initiate express
 const app = express();
 
 // Middleware
 // app.use(cors);
+app.use(bodyParser.json());
 app.use(passport.initialize());
 require('./services/passport');
 
@@ -33,6 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/auth', require('./routes/authGoogleRoutes'));
+app.use('/todos', require('./routes/todos'));
 
 // Start the Server
 const PORT = process.env.PORT || 5000;

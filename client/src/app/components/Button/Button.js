@@ -15,11 +15,13 @@ const Button = ({
   large,
   outline,
   outline_full,
+  handleClick,
   ...restProps
 }) => {
   return (
     <button
       type="button"
+      onClick={handleClick}
       className={classnames({
         [styles.normal]: normal,
         [styles.primary]: primary,
