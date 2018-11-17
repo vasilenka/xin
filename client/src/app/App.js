@@ -5,7 +5,6 @@ import classnames from 'classnames';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Auth from './pages/Auth/Auth';
-import Header from './components/Header/Header';
 
 class App extends Component {
   render() {

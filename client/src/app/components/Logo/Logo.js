@@ -9,12 +9,10 @@ const Logo = ({
   }) => {
   return (
     <div className={classnames(styles.root)}>
-      <Text className={classnames(styles.logo)} heading3 Component="h1">
+      <Text className={classnames(styles.logo)} heading3 component="h1">
         Xin.
       </Text>
-      <Text role="img" aria-label="let's get lit!" heading3>
-        🔥
-      </Text>
+      <span className={classnames(styles.emoji)} role="img" aria-label="let's get lit!">🔥</span>
     </div>
   );
 }

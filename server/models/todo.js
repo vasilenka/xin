@@ -9,19 +9,25 @@ const TodoSchema = new Schema({
     minLength: 1,
     trim: true
   },
-  user: {
-    type: ObjectId
-  },
   completed: {
     type: Boolean,
     default: false,
   },
-  created_at: {
-    type: Date,
-    default: Date.now()
+  // createdAt: {
+  //   type: Date,
+  //   default: Date.now()
+  // },
+  updatedAt: {
+    type: Number,
+    default: null
   },
-  completed_at: {
-    type: Date
+  completedAt: {
+    type: Number,
+    default: null
+  },
+  _creator: {
+    type: ObjectId,
+    required: true
   }
 })
 

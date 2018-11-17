@@ -16,6 +16,8 @@ import stylesLight from '../Light/Light.module.scss';
 import withTextProps from '../private/withTextProps';
 
 const Text = ({
+  role,
+  ariaLabel,
   component,
   bullet,
   children,
@@ -48,6 +50,8 @@ const Text = ({
       })}
     >
       <span
+        role={role}
+        aria-label={ariaLabel}
         className={classnames({
           [stylesPositive.root]: positive,
           [stylesCritical.root]: critical,

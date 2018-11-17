@@ -1,7 +1,8 @@
 @import 'src/tokens';
 
 .root {
-
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo {
@@ -9,4 +10,9 @@
   font-weight: $bold;
   color: $brand-primary-200;
   margin: $space-inline-xxs;
+}
+
+.emoji {
+  font-size: 20px;
+  line-height: 20px;
 }

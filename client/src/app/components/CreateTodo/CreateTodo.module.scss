@@ -1,0 +1,15 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-inset-ml;
+}
+
+.field {
+  padding: $space-inset-sm;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.12);
+  color: $dark-alpha-80;
+  border-radius: 3px;
+  font-size: $body-2;
+  margin: $space-inline-s;
+}

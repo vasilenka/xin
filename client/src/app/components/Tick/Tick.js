@@ -56,7 +56,7 @@ class Tick extends Component {
           handleClick={() => this.handleClick(this.tick)}
           primary
           small
-          className={styles.action}>
+          className={classnames(styles.action)}>
           {this.state.button}
         </Button>
         <Text heading3 component="h1">{
